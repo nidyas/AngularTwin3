@@ -1,0 +1,19 @@
+<div class="row" >
+  <div class="col-md-3"  *ngFor="let user of ListU">
+    <div class="card" style="width: 18rem;">
+        <img src="{{user.picture}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{user.name}}</h5>
+        <br>
+        <h5 class="card-title">{{user.job}}</h5>
+        <h6 class="card-title"> {{user.phone}}</h6>
+        <p class="card-text">{{user.email}}</p>
+        <p class="text-danger">{{user.address}}</p>
+        <button class="btn btn-sm btn-danger p-2 m-1" (click)="Del(user)">Delete User</button>
+
+
+      </div>
+    </div>
+
+  </div>
+</div>>
